@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bola Show Esportes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #005baa;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .vitrine {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .produto {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .produto:hover {
+      transform: scale(1.03);
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .produto button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #005baa;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .produto button:hover {
+      background-color: #003f7f;
+    }
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bola Show Esportes</h1>
+    <p>A melhor loja de bolas esportivas do Brasil</p>
+  </header>
+
+  <section class="vitrine">
+    <div class="produto">
+      <img src="https://images.app.goo.gl/bExXv95iUUk1YNxU9" alt="Bola de Futebol" />
+      <h3>Bola de Futebol</h3>
+      <p>R$ 89,90</p>
+      <button onclick="comprar('Bola de Futebol')">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="https://images.app.goo.gl/iCGjbRqkSk6TTgZm8" alt="Bola de Basquete" />
+      <h3>Bola de Basquete</h3>
+      <p>R$ 99,90</p>
+      <button onclick="comprar('Bola de Basquete')">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="https://images.app.goo.gl/yhgo3d44ogc94fps9 " alt="Bola de Vôlei" />
+      <h3>Bola de Vôlei</h3>
+      <p>R$ 94,90</p>
+      <button onclick="comprar('Bola de Vôlei')">Comprar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bola Show Esportes | contato@bolashow.com.br</p>
+  </footer>
+
+  <script>
+    function comprar(produto) {
+      alert("Você escolheu: " + produto + ". Em breve entraremos em contato!");
+    }
+  </script>
+
+</body>
+</html>
